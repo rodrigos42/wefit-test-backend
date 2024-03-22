@@ -1,0 +1,76 @@
+curl --request POST \
+  --url http://localhost:4568/user/create \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "legalPerson": true,
+  "cnpj": "24610568804976",
+  "cpf": "36376788025",
+  "name": "João da Silva",
+  "cellphone": "(11) 91234-5678",
+  "telephone": "(11) 3456-7890",
+  "email": "joao.silva@example.com",
+  "confirmEmail": "joao.silva@example.com",
+  "address": {
+    "zipCode": "01234-568",
+    "name": "Rua dos Testes",
+    "number": 123,
+    "complement": "Apto 456",
+    "neighborhood": "Bairro do Teste",
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  "termsAgreementAccepted": true
+}
+'
+------------------------------------------------------
+
+curl --request POST \
+  --url http://localhost:4568/user/create \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "legalPerson": false,
+  "cnpj": "78585812139999",
+  "cpf": "49426850791",
+  "name": "Maria Souza",
+  "cellphone": "(21) 98765-4321",
+  "telephone": "(21) 4567-8901",
+  "email": "maria.souza@example.com",
+  "confirmEmail": "maria.souza@example.com",
+  "address": {
+    "zipCode": "54321-012",
+    "name": "Avenida Principal",
+    "number": 456,
+    "complement": "Casa 789",
+    "neighborhood": "Bairro da Amizade",
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  "termsAgreementAccepted": true
+}
+'
+
+------------------------------------------------------
+curl --request POST \
+  --url http://localhost:4568/user/create \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "legalPerson": true,
+  "cnpj": "43459776804880",
+  "cpf": "22075169462",
+  "name": "Lucas Oliveira",
+  "cellphone": "(31) 99876-5432",
+  "telephone": "(31) 7654-3210",
+  "email": "lucas.oliveira@example.com",
+  "confirmEmail": "lucas.oliveira@example.com",
+  "address": {
+    "zipCode": "98765-432",
+    "name": "Travessa das Flores",
+    "number": 789,
+    "complement": "apto 1",
+    "neighborhood": "Bairro Central",
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  "termsAgreementAccepted": true
+}
+'

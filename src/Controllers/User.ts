@@ -59,7 +59,7 @@ export default class UserController {
                 if  (!isValidCPForCNPJ(body[key])) {
                     throw new Error(`${key} is invalid`)
     } else {
-                   body[key] = body[key].repla (/\D/g, '')
+                   body[key] = body[key].replace(/\D/g, '')
     } 
             }
         }
